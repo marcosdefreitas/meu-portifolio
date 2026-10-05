@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*
+Paleta de cores:
+    --fundo-principal
+    --texto
+    --texto-inverso
+    --destaque
+    --destaque-inverso
+    --fundo-card
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #222222;
+    --texto-inverso: white;
+    --destaque: #24204F;
+    --destaque-inverso: #7C8CFF;
+    --fundo-card: white;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+}
+
+header {
+    background-color: var(--destaque);
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: var(--texto-inverso);
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul#menu a {
+    padding: 13px 8px;
+    text-decoration: none;
+    color: var(--texto-inverso);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+ul#menu a:hover {
+    background-color: var(--destaque-inverso);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 90% auto;
+}
+
+h2 {
+    color: var(--destaque);
+    margin: 20px 0px ;
+}
+
+section#ficha {
+    grid-column: 2;
+    background-color: var(--fundo-card);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+img#foto {
+    display: block;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border: 5px solid var(--fundo-card);
+    outline: 5px solid var(--destaque-inverso);
+    border-radius: 50%;
+    margin: auto;
+}
+
+section#detalhes {
+    grid-column: 2;
+}
+
+article#skill {
+    background-color: var(--fundo-card);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#skills-container {
+    background-color: var(--fundo-card);
+}
+
+div.conteudo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+div.item {
+    margin-bottom: 20px;
+}
+
+div.barra {
+    background-color: var(--fundo-principal);
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+div.progresso {
+    height: 10px;
+    background-color: var(--destaque-inverso);
+    border-radius: 5px;
+}
