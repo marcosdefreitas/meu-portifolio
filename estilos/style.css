@@ -19,7 +19,7 @@ Paleta de cores:
     --fundo-principal: #f5f5f5;
     --texto: #222222;
     --texto-inverso: white;
-    --destaque: #24204F;
+    --destaque: #08415C;
     --destaque-inverso: #7C8CFF;
     --fundo-card: white;
 }
@@ -36,6 +36,7 @@ header {
     display: flex;
     align-content: center;
     justify-content: space-between;
+    padding: 5px;
 }
 
 header h1 {
